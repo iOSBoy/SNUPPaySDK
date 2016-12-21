@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.frameworks = 'CFNetwork','SystemConfiguration','Security'
-  s.libraries = 'z'
+  s.libraries = 'z','c++'
   s.source_files = 'paymentcontrol/inc/*.{h,m}'
   s.vendored_libraries = 'paymentcontrol/libs/libPaymentControl.a'
 end
